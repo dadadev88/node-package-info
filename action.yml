@@ -1,0 +1,14 @@
+name: 'Node Package Information'
+description: 'Get information from package JSON'
+inputs:
+  path:
+    description: 'Package JSON path with filename'
+    required: true
+outputs:
+  version:
+    description: Package version
+  name:
+    description: Package name
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
